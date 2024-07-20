@@ -6,6 +6,22 @@
     <title>Game Reviews - Detailed Reviews</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .star-rating {
+            font-size: 1.5em;
+            color: gold;
+            cursor: pointer;
+        }
+        .star-rating .fa-star {
+            transition: color 0.2s;
+        }
+        .star-rating .fa-star:hover, .star-rating .fa-star.selected {
+            color: gold;
+        }
+        .star-rating .fa-star.selected {
+            color: gold;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-dark text-white">
@@ -34,27 +50,70 @@
     </header>
 
     <main class="container my-5">
-        <h2>Detailed Game Reviews</h2>
+        <h2>Game Reviews</h2>
 
-        <section id="last-of-us" class="my-5">
-            <h3>The Last of Us: A Masterpiece</h3>
-            <img src="images/last-of-us.jpg" alt="The Last of Us" class="img-fluid mb-3">
-            <p>The Last of Us is an action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. The game is set in a post-apocalyptic world and follows the journey of Joel and Ellie as they navigate through a world filled with dangers both human and infected. The story is gripping, the characters are well-developed, and the gameplay is intense and engaging.</p>
-            <p>With stunning visuals, an emotionally charged narrative, and top-notch voice acting, The Last of Us has received critical acclaim and numerous awards. It's a must-play for any gamer looking for an unforgettable experience.</p>
+        <!-- Review section for The Last of Us -->
+        <section id="last-of-us">
+            <h3>The Last of Us</h3>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/last-of-us.jpg" alt="The Last of Us" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <p>The Last of Us is an action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. The game is set in a post-apocalyptic world and follows the journey of Joel and Ellie as they navigate through a world filled with dangers both human and infected. The story is gripping, the characters are well-developed, and the gameplay is intense and engaging.</p>
+                    <p>With stunning visuals, an emotionally charged narrative, and top-notch voice acting, The Last of Us has received critical acclaim and numerous awards. It's a must-play for any gamer looking for an unforgettable experience.</p>
+                    <p><a href="#submit-review" class="btn btn-primary">Submit Your Review</a></p>
+                </div>
+            </div>
         </section>
 
-        <section id="witcher3" class="my-5">
-            <h3>The Witcher 3: Wild Hunt - A Fantasy Epic</h3>
-            <img src="images/witcher3.jpg" alt="The Witcher 3: Wild Hunt" class="img-fluid mb-3">
-            <p>The Witcher 3: Wild Hunt is an open-world role-playing game developed by CD Projekt Red. Set in a stunningly detailed fantasy universe full of meaningful choices and impactful consequences, the game follows the story of Geralt of Rivia, a professional monster hunter, as he searches for his adopted daughter. The Witcher 3 is renowned for its deep narrative, rich world, and complex characters.</p>
-            <p>The game features a vast open world, filled with quests, monsters, and treasures. With its dynamic weather systems, day-night cycles, and a robust combat system, The Witcher 3: Wild Hunt offers an immersive and expansive gameplay experience that has been highly praised by both players and critics alike.</p>
+        <!-- Review section for The Witcher 3 -->
+        <section id="witcher3">
+            <h3>The Witcher 3: Wild Hunt</h3>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/witcher3.jpg" alt="The Witcher 3: Wild Hunt" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <p>The Witcher 3: Wild Hunt is an open-world role-playing game developed by CD Projekt Red. Set in a stunningly detailed fantasy universe full of meaningful choices and impactful consequences, the game follows the story of Geralt of Rivia, a professional monster hunter, as he searches for his adopted daughter. The Witcher 3 is renowned for its deep narrative, rich world, and complex characters.</p>
+                    <p>The game features a vast open world, filled with quests, monsters, and treasures. With its dynamic weather systems, day-night cycles, and a robust combat system, The Witcher 3: Wild Hunt offers an immersive and expansive gameplay experience that has been highly praised by both players and critics alike.</p>
+                    <p><a href="#submit-review" class="btn btn-primary">Submit Your Review</a></p>
+                </div>
+            </div>
         </section>
 
-        <section id="red-dead-redemption2" class="my-5">
-            <h3>Red Dead Redemption 2: An Epic Tale of the Wild West</h3>
-            <img src="images/red-dead-redemption2.jpg" alt="Red Dead Redemption 2" class="img-fluid mb-3">
-            <p>Red Dead Redemption 2, developed by Rockstar Games, is a sprawling Western set at the end of the 19th century. The game follows Arthur Morgan, a member of the Van der Linde gang, as he navigates the decline of the Wild West. The game is noted for its vast, detailed world, engaging story, and deep character development.</p>
-            <p>With breathtaking visuals, a richly detailed world, and a compelling narrative, Red Dead Redemption 2 is a landmark achievement in open-world gaming. The game offers a mix of story-driven missions and free-form exploration, allowing players to fully immerse themselves in the life of an outlaw.</p>
+        <!-- Review section for Red Dead Redemption 2 -->
+        <section id="red-dead-redemption2">
+            <h3>Red Dead Redemption 2</h3>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/red-dead-redemption2.jpg" alt="Red Dead Redemption 2" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <p>Red Dead Redemption 2, developed by Rockstar Games, is a sprawling Western set at the end of the 19th century. The game follows Arthur Morgan, a member of the Van der Linde gang, as he navigates the decline of the Wild West. The game is noted for its vast, detailed world, engaging story, and deep character development.</p>
+                    <p>With breathtaking visuals, a richly detailed world, and a compelling narrative, Red Dead Redemption 2 is a landmark achievement in open-world gaming. The game offers a mix of story-driven missions and free-form exploration, allowing players to fully immerse themselves in the life of an outlaw.</p>
+                    <p><a href="#submit-review" class="btn btn-primary">Submit Your Review</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review submission form -->
+        <section id="submit-review">
+            <h3>Submit Your Review</h3>
+            <div class="star-rating" id="star-rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+            </div>
+            <textarea id="comment" class="form-control mt-2" rows="3" placeholder="Write your comment..."></textarea>
+            <button id="submit-review-button" class="btn btn-primary mt-2" disabled>Submit Review</button>
+            <div id="rating-summary" class="my-4">
+                <h4>Average Rating: <span id="average-rating">N/A</span></h4>
+                <h5>All Reviews:</h5>
+                <ul id="review-list" class="list-unstyled"></ul>
+            </div>
         </section>
     </main>
 
@@ -65,6 +124,96 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const gameId = new URLSearchParams(window.location.search).get('game') || 'last-of-us';
+            const gameReviewSection = document.querySelector('main');
+
+            const games = {
+                'last-of-us': {
+                    title: 'The Last of Us',
+                    img: 'images/last-of-us.jpg',
+                    description: `The Last of Us is an action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. The game is set in a post-apocalyptic world and follows the journey of Joel and Ellie as they navigate through a world filled with dangers both human and infected. The story is gripping, the characters are well-developed, and the gameplay is intense and engaging. With stunning visuals, an emotionally charged narrative, and top-notch voice acting, The Last of Us has received critical acclaim and numerous awards. It's a must-play for any gamer looking for an unforgettable experience.`
+                },
+                'witcher3': {
+                    title: 'The Witcher 3: Wild Hunt',
+                    img: 'images/witcher3.jpg',
+                    description: `The Witcher 3: Wild Hunt is an open-world role-playing game developed by CD Projekt Red. Set in a stunningly detailed fantasy universe full of meaningful choices and impactful consequences, the game follows the story of Geralt of Rivia, a professional monster hunter, as he searches for his adopted daughter. The Witcher 3 is renowned for its deep narrative, rich world, and complex characters. The game features a vast open world, filled with quests, monsters, and treasures. With its dynamic weather systems, day-night cycles, and a robust combat system, The Witcher 3: Wild Hunt offers an immersive and expansive gameplay experience that has been highly praised by both players and critics alike.`
+                },
+                'red-dead-redemption2': {
+                    title: 'Red Dead Redemption 2',
+                    img: 'images/red-dead-redemption2.jpg',
+                    description: `Red Dead Redemption 2, developed by Rockstar Games, is a sprawling Western set at the end of the 19th century. The game follows Arthur Morgan, a member of the Van der Linde gang, as he navigates the decline of the Wild West. The game is noted for its vast, detailed world, engaging story, and deep character development. With breathtaking visuals, a richly detailed world, and a compelling narrative, Red Dead Redemption 2 is a landmark achievement in open-world gaming. The game offers a mix of story-driven missions and free-form exploration, allowing players to fully immerse themselves in the life of an outlaw.`
+                }
+            };
+
+            if (games[gameId]) {
+                const game = games[gameId];
+                const section = document.getElementById(gameId);
+
+                section.innerHTML = `
+                    <h3>${game.title}</h3>
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <img src="${game.img}" alt="${game.title}" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>${game.description}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Handle review submission
+            const stars = document.querySelectorAll('.fa-star');
+            const commentBox = document.getElementById('comment');
+            const submitButton = document.getElementById('submit-review-button');
+            let selectedRating = 0;
+
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    selectedRating = parseInt(star.getAttribute('data-value'));
+                    stars.forEach(s => s.classList.toggle('selected', parseInt(s.getAttribute('data-value')) <= selectedRating));
+                    submitButton.disabled = selectedRating === 0;
+                });
+            });
+
+            submitButton.addEventListener('click', () => {
+                const comment = commentBox.value.trim();
+                if (selectedRating === 0 || comment === '') {
+                    alert('Please select a rating and enter a comment.');
+                    return;
+                }
+
+                // Example review object, normally you would send this to a server
+                const review = {
+                    rating: selectedRating,
+                    comment
+                };
+
+                // Display review (in a real application, you would update this via API)
+                const reviewList = document.getElementById('review-list');
+                const reviewItem = document.createElement('li');
+                reviewItem.textContent = `${review.rating} stars: ${review.comment}`;
+                reviewList.appendChild(reviewItem);
+
+                // Reset form
+                stars.forEach(star => star.classList.remove('selected'));
+                selectedRating = 0;
+                commentBox.value = '';
+                submitButton.disabled = true;
+
+                // Calculate average rating (mock implementation)
+                const reviews = Array.from(reviewList.children).map(item => {
+                    const [rating] = item.textContent.split(' ');
+                    return { rating: parseFloat(rating) };
+                });
+                const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0);
+                const averageRating = reviews.length ? (totalRating / reviews.length).toFixed(1) : 'N/A';
+                document.getElementById('average-rating').textContent = averageRating;
+            });
+        });
+    </script>
 </body>
 </html>
