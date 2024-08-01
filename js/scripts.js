@@ -19,3 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const loading = document.getElementById('loading');
+    loading.style.display = 'none';
+});
